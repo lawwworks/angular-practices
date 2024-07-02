@@ -1,0 +1,26 @@
+<h1>List of Items</h1>
+
+<div class="container">
+  <div class="input-and-btn">
+    <input
+      placeholder="Add Items"
+      type="text"
+      (change)="setNewItem($any($event).target.value)"
+      [value]="newItem"
+      class="input-field"
+    />
+
+    <button (click)="addItem()" class="addItem-Btn">Add Items</button>
+  </div>
+
+  <div class="items-comp">
+    <div *ngFor="let item of items" class="single-item">
+      {{ item.itemName }}
+      <br />
+      $ {{ item.price }}
+      <button (click)="removeItem(item.id)" class="remove-btn">
+        Remove Item
+      </button>
+    </div>
+  </div>
+</div>

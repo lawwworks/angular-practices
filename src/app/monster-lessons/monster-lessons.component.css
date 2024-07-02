@@ -1,0 +1,73 @@
+* {
+  border-radius: 14px;
+  border-style: none;
+  font-size: 20px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-left: 20px;
+  justify-content: space-evenly;
+}
+
+.input-and-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.single-item {
+  min-width: 600px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 20px;
+  align-items: center;
+  border: 1px solid grey;
+  box-shadow: 3px 5px 10px rgb(197, 230, 250);
+}
+
+button {
+  padding: 20px;
+  max-width: 200px;
+  cursor: pointer;
+  border: 1px solid rgb(109, 109, 109);
+}
+
+.input-field {
+  padding: 20px;
+  min-width: 300px;
+  border: 1px solid rgb(185, 192, 192);
+}
+
+.remove-btn {
+  color: white;
+  background-color: rgb(228, 44, 44);
+}
+
+.remove-btn:hover {
+  background-color: rgb(189, 38, 38);
+}
+
+.addItem-Btn {
+  min-width: 200px;
+  color: white;
+  background-color: rgb(0, 116, 211);
+}
+
+.addItem-Btn:hover {
+  background-color: rgb(0, 107, 194);
+}

@@ -1,0 +1,13 @@
+<!-- {{ name }}
+
+<button (click)="changeAgeState()">Change State</button>
+<h1 *ngIf="isHidden; else condition">{{ age }}</h1>
+
+<ng-template #condition
+  ><br />
+  <br />Age is Hidden</ng-template
+> -->
+
+<input [(ngModel)]="updateSearchText" />
+
+<h1>{{ updateSearchText }}</h1>

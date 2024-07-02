@@ -1,0 +1,62 @@
+<h1>{{ title }}</h1>
+
+<form class="form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div class="field">
+    <input
+      type="text"
+      placeholder="Enter First Name"
+      name="firstName"
+      formControlName="firstName"
+      [class.invalid]="
+        registerForm.get('firstName')?.invalid &&
+        (registerForm.get('firstName')?.dirty ||
+          registerForm.get('firstName')?.touched)
+      "
+    />
+  </div>
+
+  <div class="field">
+    <input
+      type="text"
+      placeholder="Enter Last Name"
+      name="lastName"
+      formControlName="lastName"
+      [class.invalid]="
+        registerForm.get('lastName')?.invalid &&
+        (registerForm.get('lastName')?.dirty ||
+          registerForm.get('lastName')?.touched)
+      "
+    />
+  </div>
+
+  <div class="field">
+    <input
+      type="text"
+      placeholder="Enter Email"
+      name="email"
+      formControlName="email"
+      [class.invalid]="
+        registerForm.get('email')?.invalid &&
+        (registerForm.get('email')?.dirty || registerForm.get('email')?.touched)
+      "
+    />
+  </div>
+
+  <div class="field">
+    <input
+      type="password"
+      placeholder="Enter Password"
+      name="password"
+      formControlName="password"
+      [class.invalid]="
+        registerForm.get('password')?.invalid &&
+        (registerForm.get('password')?.dirty ||
+          registerForm.get('password')?.touched)
+      "
+    />
+  </div>
+
+  <button type="submit">Login</button>
+</form>
+
+<div><reactive-forms-table></reactive-forms-table></div>

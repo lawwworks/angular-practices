@@ -1,0 +1,6 @@
+<p>two-way-binding works!</p>
+
+<!-- <input [value]="searchText" (input)="updateSearchText($event)" /> -->
+<input [(ngModel)]="searchText" />
+
+<h1>{{ searchText }}</h1>
